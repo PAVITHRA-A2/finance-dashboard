@@ -1,0 +1,157 @@
+/* Page styling */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+}
+
+/* Main container */
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Dashboard summary cards */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.balance {
+  border-left: 5px solid #007bff;
+}
+
+.income {
+  border-left: 5px solid #28a745;
+}
+
+.expense {
+  border-left: 5px solid #dc3545;
+}
+
+/* Form styling */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form input,
+form select {
+  padding: 8px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add button (blue) */
+button:not(.delete-btn) {
+  background: #007bff;
+  color: white;
+}
+
+button:not(.delete-btn):hover {
+  background: #0056b3;
+}
+
+/* Delete button (red) */
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #a31624;
+}
+
+/* Layout for transactions + chart */
+.layout {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  height: 400px;
+}
+
+/* Transactions section */
+.left {
+  flex: 2;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Chart section */
+.right {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background: #007bff;
+  color: white;
+}
+
+table tr:hover {
+  background: #f1f1f1;
+}
+
+@media (max-width: 768px){
+
+  .summary{
+    flex-direction: column;
+  }
+
+  .layout{
+    flex-direction: column;
+  }
+
+}
