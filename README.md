@@ -35,20 +35,18 @@ Backend
 
 ## Project Structure
 
-finance-dashboard
-│
-├── backend
-│   ├── server.js
-│   └── transactions.json
-│
-├── frontend
-│   ├── src
-│   │   ├── components
-│   │   ├── App.jsx
-│   │   ├── api.js
-│   │   └── index.css
-│   │
-│   └── package.json
+The project is organized into two main parts: **backend** and **frontend**.
+
+The **backend** folder contains the server-side code.
+It includes `server.js`, which runs the Node.js and Express server, and `transactions.json`, which is used to store transaction data.
+
+The **frontend** folder contains the React application.
+Inside the `src` folder are the main frontend files. The `components` folder stores reusable UI components used in the dashboard.
+`App.jsx` is the main React component that renders the application.
+`api.js` handles communication between the frontend and backend APIs.
+`index.css` contains the global styles for the user interface.
+
+The `package.json` file in the frontend folder manages project dependencies and scripts needed to run the React application.
 
 ---
 
